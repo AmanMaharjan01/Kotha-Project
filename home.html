@@ -14,6 +14,8 @@
 		@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light|Supermercado+One&display=swap');
 		@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
 		@import url('https://fonts.googleapis.com/css?family=Philosopher&display=swap');
+		@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+		@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
 	*
 	{
 		padding: 0px;
@@ -21,7 +23,8 @@
 	}
 	body
 	{
-		background-color: #f9f7fa;
+		background-image: url(img/10.jpg);
+		background-size: cover;
 	}
 	ul
 	{
@@ -38,7 +41,7 @@
 		position: fixed;
 		width: 250px;
 		height: 100%;
-		background-color: #26a952;
+		background-color: #5f2c7e;
 	}
 	h2
 	{
@@ -62,7 +65,7 @@
 	}
 	hr
 	{
-		background-color: green;
+		background-color: #5f2c7e;
 		opacity: .5;
 	}
 	#lg
@@ -86,7 +89,7 @@
     	left: 58%;
     	transform: translate(-50%);
     	text-align: center;
-    	color: #26a952;
+    	color: #5f2c7e;
     	height: 50px;
     	padding-top: 0px;
         text-align: center;
@@ -94,6 +97,7 @@
     }
     .head1
     {
+    	font-family: 'Exo 2', sans-serif;
     	text-transform: uppercase;
     	font-size: 40px;
     }
@@ -111,7 +115,7 @@
     {
     	position: absolute;
     	width: 40%;
-    	top: 30%;
+    	top: 20%;
     	left: 55%;
     	transform: translate(-50%,-50%);
     }
@@ -124,17 +128,16 @@
     {
     	float: left;
     	width: 100%;
-    	border: 3px solid #26a952;
+    	border: 3px solid #5f2c7e;    	
     	padding: 11px;
-
     }
     .searchbtn
     {
       position: absolute;
       width: 50px;
       height: 50px;
-      border: 1px solid #26a952;
-      background-color: #26a952;
+      border: 1px solid #5f2c7e;
+      background-color: #5f2c7e;
       cursor: pointer;
     }
     .wrap #searching .searchbtn .fas
@@ -143,18 +146,62 @@
     }
     .recommended
     {
+    	background-color: #ebdcf7;
     	position: absolute;
-    	top: 37%;
+    	top: 32%;
     	left: 20%;
-    	border: 1px solid #26a952;
+    	border: 1px solid #5f2c7e;
     	width: 1170px;
-    	height: 300px;
+    	height: 350px;
     }
     .recommended p
     {
+    	text-align: center;
     	padding-left: 6px;
-    	color: #26a952;
+    	font-size: 18px;
+    	color: #5f2c7e;
+    	font-family: 'Titillium Web', sans-serif;
     }
+    #c1 .card
+		{
+			position: absolute;
+			top: 22%;
+			left: 1%;
+			width: 270px;
+			height: 250px;
+			font-size: 15px;
+			text-align: center;
+		}
+		#c2 .card
+		{
+			position: absolute;
+			top: 22%;
+			left: 26%;
+			width: 270px;
+			height: 250px;
+			font-size: 15px;
+			text-align: center;
+		}
+		#c3 .card
+		{
+			position: absolute;
+			top: 22%;
+			left: 51%;
+			width: 270px;
+			height: 250px;
+			font-size: 15px;
+			text-align: center;
+		}
+		#c4 .card
+		{
+			position: absolute;
+			top: 22%;
+			left: 76%;
+			width: 270px;
+			height: 250px;
+			font-size: 15px;
+			text-align: center;
+		}
 	</style>
 </head>
 <body>
@@ -185,8 +232,48 @@
 	 </div>
 	</div>
 	<div class="recommended">
-		<p>Recommended Locations :</p>
+		<p>Popular Locations </p>
+		<div id="c1">
+      <div class="card ">       
+       <div class="card-body" style="background-color: #f7ecff">            
+       
+         <hr>
+         <p>hello
+        </p>
+      </div>
+     </div> 
     </div>
+    <div id="c2">
+      <div class="card ">       
+       <div class="card-body" style="background-color: #f7ecff">            
+       
+        <hr>
+         <p>hello
+
+      </div>
+     </div> 
+    </div>
+    <div id="c3">
+      <div class="card ">       
+       <div class="card-body" style="background-color: #f7ecff">  
+       	  <img src="img/ktm1.jpg" width="227" height="150">
+        <hr>
+           <a href="http://www.google.com/kathmandu">Kathmandu</a>            
+      </div>
+     </div> 
+    </div>
+     <div id="c4">
+      <div class="card ">       
+       <div class="card-body" style="background-color: #f7ecff">  
+        <img src="img/la.jpg" width="227" height="150">
+        <hr>     
+          <a href="http://www.google.com/lalitpur">Lalitpur</a>   
+      </div>
+     </div> 
+    </div>
+    
+    </div>
+
 <!---Script src--->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
