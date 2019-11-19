@@ -25,6 +25,7 @@
 	{
 		background-image: url(img/10.jpg);
 		background-size: cover;
+		font-family: 'Titillium Web', sans-serif;
 	}
 	ul
 	{
@@ -127,7 +128,7 @@
     {
       position: absolute;
       width: 50px;
-      height: 50px;
+      height: 51px;
       border: 1px solid #5f2c7e;
       background-color: #5f2c7e;
       cursor: pointer;
@@ -215,13 +216,14 @@
      .btn
     {
        background-color: #5f2c7e;
-       width: 90px;
-       height: 90px;
+       width: 140px;
+       height: 65px;
        position: absolute;
-       left: 90%;
-       top: 85%;
+       left: 87%;
+       top: 87%;
        cursor: pointer;
-       border-radius: 50%;
+       border-radius: 30px 30px 30px 30px;
+
     }
     .btn:hover
     {
@@ -229,14 +231,12 @@
     }
     .btn .fas
     {
-    	color: white;
-    	width: 20px;
-    	height: 20px;
+    	color: white;       
     }
 	</style>
 </head>
 <body>
-	<a href=""><button type="submit" class="btn" value="submit"><i class="fas fa-plus-circle"></i>
+	<a href="Create.html"><button type="submit" class="btn" value="submit"><i class="fas fa-plus-circle"> <span style="font-family: 'Titillium Web', sans-serif;">Create Ad</span></i>
 	</button></a>
 	<div class="wrapper">
 		<button class="navbar-toggler" data-toggle="collapse" data-target="#co">
@@ -245,7 +245,7 @@
 		<div class="sidebar" id="co">
 			<h2><span id="k">K</span>OTHA</h2><hr>
 			<ul>
-				<li><a href="#"><i class="fas fa-home"></i> Home</li></a>
+				<li><a href="home.html"><i class="fas fa-home"></i> Home</li></a>
 				<li><a href="#"><i class="fas fa-comment-medical"></i> Your Ads</li></a>
 				<li><a href="#"><i class="fas fa-cogs"></i> Settings</li></a>
 				<li id="lg"><a href="frontpage.html"><i class="fas fa-sign-out-alt"></i>Log Out</a></li>				
