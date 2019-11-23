@@ -16,6 +16,8 @@
 		@import url('https://fonts.googleapis.com/css?family=Philosopher&display=swap');
 		@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 		@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
 	*
 	{
 		padding: 0px;
@@ -46,10 +48,10 @@
 	}
 	h2
 	{
-	  color: white;
+	  color: #5f2c7e;
 	  padding-top: 5px;
-      text-align: center;
-      font-family: 'Poiret One', cursive; 
+    text-align: center;
+    font-family: 'Alata', sans-serif;
 	}
 	.wrapper .sidebar ul li
 	{
@@ -58,7 +60,8 @@
 	.wrapper .sidebar ul li a
 	{
 		color: white;
-        display: block;
+    display: block;
+    padding-left: 10px;
 	}
 	.wrapper .sidebar ul li a .fas
 	{
@@ -71,17 +74,22 @@
 	}
 	#lg
 	{
-		padding-top: 460px;
+		padding-top: 450px;
 	}
     .wrapper .sidebar ul li a:hover
     {
-    	color: violet;
-    	text-decoration:none;
+      color: #c37d6c;
+      text-decoration:none;
     }
     #k
     {
       font-size: 50px;
-      color: white;
+      color: #5f2c7e;
+    }
+    #k3
+    {
+      background-color: white;
+      border-radius: 0px 0px 10px 30px;
     }
     #head
     {
@@ -93,8 +101,8 @@
     	color: #5f2c7e;
     	height: 50px;
     	padding-top: 0px;
-        text-align: center;
-        font-family: 'Poiret One', cursive; 
+      text-align: center;
+      font-family: 'Poiret One', cursive; 
     }
     .head1
     {
@@ -107,10 +115,15 @@
     .wrap
     {
     	position: absolute;
-    	width: 40%;
-    	top: 20%;
-    	left: 55%;
+    	width: 70%;
+    	top: 50%;
+    	left: 50%;
     	transform: translate(-50%,-50%);
+    }
+    .wrap #F
+    {
+      text-align: center;
+      font-size: 50px;
     }
     #searching
     {
@@ -119,9 +132,10 @@
     }
     .searchhere
     {
+      border-radius: 25px 0px 0px 25px;
     	float: left;
     	width: 100%;
-    	border: 3px solid #5f2c7e;    	
+    	border: 3px solid white;    	
     	padding: 11px;
     }
     .searchbtn
@@ -129,9 +143,10 @@
       position: absolute;
       width: 50px;
       height: 51px;
-      border: 1px solid #5f2c7e;
-      background-color: #5f2c7e;
+      border: 2px solid #ffffff; 
+      background-color: #5f2c7e; 
       cursor: pointer;
+      border-radius: 0px 25px 25px 0px;
     }
     .wrap #searching .searchbtn .fas
     {
@@ -139,30 +154,31 @@
     }
     .wrap #searching .searchbtn:hover
     {
-    	background-color:#692d95;
+    	background-color: #c9afe7; 
     }
     .recommended
     {
-    	background-color: #f6eef9;
     	position: absolute;
-    	top: 32%;
+    	top: 18%;
     	left: 20%;
-    	border: 3px solid #5f2c7e; 
     	width: 1170px;
-    	height: 380px;
+    	height: 450px;
+      border-radius: 15px;
+      background-color: #fcf6f5; 
+      border: 2px solid #5d112e;
     }
     .recommended p
     {
     	text-align: center;
     	padding-top: 6px;
     	padding-left: 6px;
-    	font-size: 22px;
+    	font-size: 20px;
     	color: #5f2c7e;
     	font-family: 'Titillium Web', sans-serif;
     }
     #c1 .card
 	{
-		color: #5f2c7e;
+		color: #7e7e37;
 		position: absolute;
 		top: 22%;
 		left: 1%;
@@ -206,28 +222,32 @@
 	}
 	 .card .card-body a
 	{
-		color: #5f2c7e;
+		color: #5d112e;
 	}
 	 .card .card-body a:hover
 	{
-		color: violet;
+		color: #dca79e;
 		text-decoration: none;
 	}
      .btn
     {
-       background-color: #5f2c7e;
+       background-color: #5f2c7e; 
        width: 140px;
        height: 65px;
        position: absolute;
        left: 87%;
-       top: 87%;
+       top: 85%;
        cursor: pointer;
        border-radius: 30px 30px 30px 30px;
 
     }
     .btn:hover
     {
-    	background-color: #692d95;
+      top: 84%;
+      left: 87%;
+      width: 150px;
+      height: 70px;
+    	border-radius: 30px 30px 30px 30px;
     }
     .btn .fas
     {
@@ -240,19 +260,59 @@
     .sidebar ul li:hover ul li
     {
     	display: block;
-    	padding-left: 50px;
+    	padding-left: 20px;
     }
+    #top
+    {
+      width: 70%;
+      height: 78px;
+      background-color: #5f2c7e;
+      position: absolute;
+      left: 23%;
+      border-radius: 0px 0px 100px 100px;
+      }
+      #top p
+      {
+        color: white;
+        text-align: center;
+        font-family: 'Alata', sans-serif;
+        position: absolute;
+        left: 40%;
+        font-size: 25px;
+        word-spacing: 5px;
+        font-family: 'Alata', sans-serif;
+        letter-spacing: 1px;
+      }   
+      #k4
+      {
+        font-size: 60px;
+      }
+
 	</style>
 </head>
 <body>
 	<a href="Create.html"><button type="submit" class="btn" value="submit"><i class="fas fa-plus-circle"> <span style="font-family: 'Titillium Web', sans-serif;">Create Ad</span></i>
 	</button></a>
 	<div class="wrapper">
+     <div id="top">
+       <div class="wrap"> 
+   <div id="searching">
+    <div>
+      <input type="text" class="searchhere" placeholder="Search Location For Room">
+      <a href="search.html"><button type="submit" class="searchbtn"><i class="fas fa-search"></i></button>
+      </a>
+    </div>    
+   </div>
+  </div>
+     </div>
 		<button class="navbar-toggler" data-toggle="collapse" data-target="#co">
 	  	<span class="navbar-toggler-icon"></span>
 	    </button>
 		<div class="sidebar" id="co">
-			<h2><span id="k">K</span>OTHA</h2><hr>
+      <div id="k3">
+			<h2><span id="k">K</span>OTHA</h2>
+      </div>
+      <br>
 			<ul>
 				<li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
 				<li><a href="YourAds.html"><i class="fas fa-comment-medical"></i> Your Ads</a></li>
@@ -268,20 +328,11 @@
 		</div>
 				
     </div>
-    <div class="wrap"> 
-	 <div id="searching">
-		<div>
-			<input type="text" class="searchhere" placeholder="Search Location For Room">
-			<a href="search.html"><button type="submit" class="searchbtn"><i class="fas fa-search"></i></button>
-			</a>
-		</div>		
-	 </div>
-	</div>
 	<div class="recommended">
-		<p>Popular Locations </p>
+		<p style="color: #5d112e;">Popular Locations </p><hr style="background-color:#5d112e;">
 		<div id="c1">
       <div class="card ">       
-       <div class="card-body" style="background-color: #f7ecff">            
+       <div class="card-body" style="background-color: #ffffff">            
          <img src="img/ktm1.jpg" width="227" height="150">
          <hr>
           <a href="http://www.google.com/kathmandu">Kathmandu</a>  
@@ -290,7 +341,7 @@
     </div>
     <div id="c2">
       <div class="card ">       
-       <div class="card-body" style="background-color: #f7ecff">            
+       <div class="card-body" style="background-color: #ffffff">            
          <img src="img/Dharan.jpg" width="227" height="150">
         <hr>
         <a href="http://www.google.com/kathmandu">Dharan</a>  
@@ -299,7 +350,7 @@
     </div>
     <div id="c3">
       <div class="card ">       
-       <div class="card-body" style="background-color: #f7ecff">  
+       <div class="card-body" style="background-color: #ffffff">  
        	  <img src="img/bkt.jpg" width="227" height="150">
         <hr>
            <a href="http://www.google.com/Bhaktapur">Bhaktapur</a>            
@@ -308,7 +359,7 @@
     </div>
      <div id="c4">
       <div class="card ">       
-       <div class="card-body" style="background-color: #f7ecff">  
+       <div class="card-body" style="background-color: #ffffff">  
         <img src="img/la.jpg" width="227" height="150">
         <hr>     
           <a href="http://www.google.com/lalitpur">Lalitpur</a>   
