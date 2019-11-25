@@ -24,7 +24,7 @@
 			left: 75%;
 			transform: translate(-50%,-50%);
 			width: 670px;
-			height: 480px;	
+			height: 90%;	
 		}
 		.log
 		{
@@ -90,13 +90,50 @@
             background-color: #5f2c7e;
             color: white;
         }
+        @media screen and (max-width: 500px)
+        {
+            .card .card-body
+            {
+                width: 90%;
+                padding: 0;
+            }
+        }
+        #container
+        {
+            width: 1100px;
+            height: 580px;
+            position: absolute;
+            top: 15%;
+            left: 9.7%;
+            background-color: #5f2c7e;
+            border-radius: 400px 0px 0px 400px;
+        }
+        .head
+        {
+            color: white;
+            position: absolute;
+            top: 15%;
+            left: 12%;
+            font-size: 100px;
+        }
+        .hk
+        {
+           font-size: 180px;
+        }
+        .hp
+        {
+           color: white;
+           font-size: 22px;
+           position: absolute;
+           top: 53%;
+           left: 20%;
+        }
     </style>
 </head>
 <body>	   
-     <div id="heading">
-         <h1 class="head"><span style="font-size: 230px;">K</span>OTHA</h1>
-         <p style="text-align: center;">Need a place ? Get a place!</p>
-     </div> 
+     <div id="container">
+        <p class="head"><span class="hk">K</span>otha</p>
+        <span class="hp">Need a place? Get a place!</span>
 	 <div class="card" style="width: 27rem;">		
 	  <div class="card-body" style="background-color: white;">
         <p id="logh"><span style="font-size: 40px;">K</span>OTHA</p>
@@ -104,14 +141,14 @@
 	   <form>
             <div class="form-group row">
             <div class="col-sm-12" id="Email">
-            <span class="log" style="color: #5f2c7e">Username</span>
-            <input type="text" class="form-control" placeholder="Enter Username">
+            <span class="log" style="color: #5f2c7e">Email</span>
+            <input type="email" class="form-control" placeholder="Enter Email Address">
             </div>
             </div>
             <div class="form-group row">        
             <div class="col-sm-12" id="Password">
             <span class="log" style="color: #5f2c7e;">Password</span>
-            <input type="text" class="form-control" placeholder="Enter Password">
+            <input type="password" class="form-control" placeholder="Enter Password">
             </div>
             </div>
             <div class="row">
@@ -130,6 +167,7 @@
             	<label class="ns"> Not signed In yet ? Click here to signup, <a href="signup.html" style="color: #5f2c7e">Sign Up</a></label>
             </div>
     </form>
+    </div>
     </div>
 </div>
 

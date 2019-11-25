@@ -164,8 +164,8 @@
     	width: 1170px;
     	height: 450px;
       border-radius: 15px;
-      background-color: #fcf6f5; 
-      border: 2px solid #5d112e;
+      background-color: white; 
+      border: 2px solid white;
     }
     .recommended p
     {
@@ -243,10 +243,11 @@
     }
     .btn:hover
     {
-      top: 84%;
+      background-color: #aa70f0;
+      top: 85%;
       left: 87%;
-      width: 150px;
-      height: 70px;
+      width: 143px;
+      height: 67px;
     	border-radius: 30px 30px 30px 30px;
     }
     .btn .fas
@@ -286,6 +287,11 @@
       #k4
       {
         font-size: 60px;
+      }
+      #location
+      {
+        font-size:20px;
+        color: #5f2c7e;
       }
 
 	</style>
@@ -329,13 +335,13 @@
 				
     </div>
 	<div class="recommended">
-		<p style="color: #5d112e;">Popular Locations </p><hr style="background-color:#5d112e;">
+		<p style="color: #5f2c7e;">Popular Locations </p><hr style="background-color:#5d112e;">
 		<div id="c1">
       <div class="card ">       
        <div class="card-body" style="background-color: #ffffff">            
-         <img src="img/ktm1.jpg" width="227" height="150">
+         <img src="img/ktm1.jpg" width="230" height="150">
          <hr>
-          <a href="http://www.google.com/kathmandu">Kathmandu</a>  
+          <a id="location" href="http://www.google.com/kathmandu">Kathmandu</a>  
       </div>
      </div> 
     </div>
@@ -344,7 +350,7 @@
        <div class="card-body" style="background-color: #ffffff">            
          <img src="img/Dharan.jpg" width="227" height="150">
         <hr>
-        <a href="http://www.google.com/kathmandu">Dharan</a>  
+        <a id="location" href="http://www.google.com/kathmandu">Dharan</a>  
       </div>
      </div> 
     </div>
@@ -353,7 +359,7 @@
        <div class="card-body" style="background-color: #ffffff">  
        	  <img src="img/bkt.jpg" width="227" height="150">
         <hr>
-           <a href="http://www.google.com/Bhaktapur">Bhaktapur</a>            
+           <a id="location" href="http://www.google.com/Bhaktapur">Bhaktapur</a>            
       </div>
      </div> 
     </div>
@@ -362,7 +368,7 @@
        <div class="card-body" style="background-color: #ffffff">  
         <img src="img/la.jpg" width="227" height="150">
         <hr>     
-          <a href="http://www.google.com/lalitpur">Lalitpur</a>   
+          <a id="location" href="http://www.google.com/lalitpur">Lalitpur</a>   
       </div>
      </div> 
     </div>
