@@ -177,7 +177,14 @@
       display: block;
       padding-left: 20px;
     }
-</style>
+    .wrap #searching #room
+    {
+      width: 120px;
+      height: 51px;
+      border: 1px solid white; 
+      background-color: #FBF8FE;
+    }
+  </style>
 </head>
 <body>
   <a href="Create.html"><button type="submit" class="btn" value="submit"><i class="fas fa-plus-circle"></i> Create Ads
@@ -191,11 +198,11 @@
     </span>
   <div class="wrap"> 
    <div id="searching">
-    <div>
       <input type="text" class="searchhere" placeholder="Search Location For Room">
-      <a href="search.html"><button type="submit" class="searchbtn"><i class="fas fa-search"></i></button>
-      </a>
-    </div>    
+      <input id="room" type="number" min=" 1" max=" 100" placeholder=" No of Rooms">
+      <a href="search.html">
+        <button type="submit" class="searchbtn"><i class="fas fa-search"></i></button>
+      </a>   
    </div>
   </div>
      </div>

@@ -161,3 +161,11 @@ hr
   {
     font-size: 60px;
   }   
+   #content #top .head3
+   {
+      position: absolute;
+      top: 10%;
+      left: 48%;
+      font-size: 40px;
+    font-family: 'Titillium Web', sans-serif;
+   }
