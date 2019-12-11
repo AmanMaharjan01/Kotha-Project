@@ -21,6 +21,7 @@
   }
 </script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
     <style type="text/css">
       .wrap
     {
@@ -78,7 +79,7 @@
       background-color: white; 
       border: 2px solid white;
     }
-    .recommended p
+    .recommended .head
     {
       text-align: center;
       padding-top: 6px;
@@ -96,6 +97,55 @@
       word-spacing: 3px;
       letter-spacing: 1px;
       font-family: 'Titillium Web', sans-serif;
+    }
+    .recommended .desc1 span
+    {
+      position: absolute;
+      top: 10%;
+      left: 40%;
+      color: #5f2c7e;
+      word-spacing: 3px;
+      letter-spacing: 1px;
+      font-family: 'Titillium Web', sans-serif;
+    }
+    .recommended .head2
+    {
+      font-size: 25px;
+      padding-left: 40px;
+      color: #5f2c7e;
+      font-family: 'Titillium Web', sans-serif;
+    }
+    .recommended .abt
+    {
+       padding-left: 40px;
+       padding-right: 40px;
+       font-size: 17px;
+       color: #5f2c7e;
+       word-spacing: 2px;
+       letter-spacing: 1px;
+    }
+    .recommended .desc1
+    {
+      float: right;
+      height: 300px;
+      width: 700px;
+      padding-top: 50px;
+      padding-right: 5px;
+    }
+    .recommended .desc1 .detail
+    {
+      font-size: 17px;
+    }
+    .recommended .desc1 span
+    {
+      position: absolute;
+      top: 20%;
+      left: 41%;
+    }
+    .recommended .desc2
+    {
+       position: absolute;
+       bottom: 10%;
     }
     </style>
 </head>
@@ -139,14 +189,45 @@
     </ul>
     </div>
     <div id="rec" class="recommended">
-        <p style="color: #5d112e;">Details</p><hr style="background-color:#5d112e;">
-        <span>
-          
-          <p></p>
-        </span>
+        <p class="head" style="color: #5d112e;">Details</p><hr style="background-color:#5d112e;">
+       <div class="slidershow middle">
+
+      <div class="slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <div class="slide s1">
+          <img src="img/room1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="img/room2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="img/room3.jpg" alt="">
+        </div>
+      </div>
+      <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+      </div>
     </div>
-
-
+    <div class="desc1">
+              <span><b>Location : Kirtipur, near Baghbhairab temple</b><br><br>
+              No. of rooms: 2<br><br>
+              Price/month : Rs.3000<br><br>
+              Owner: Ram Bahadur Maharjan<br><br></span>
+    </div>
+    <div class="desc2">
+      <p class="head2" style="border: 1px solid #5f2c7e; width: 200px; margin-left: 30px; border-radius: 10px 10px 10px 10px">Description</p>
+              <p class="abt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
 <!---Script src--->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
