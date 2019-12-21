@@ -75,8 +75,6 @@
       width: 1170px;
       height: 450px;
       border-radius: 15px;
-      background-color: white; 
-      border: 2px solid white;
     }
     .recommended p
     {
@@ -92,44 +90,24 @@
     color: #7e7e37;
     position: absolute;
     top: 22%;
-    left: 1%;
-    width: 270px;
-    height: 250px;
+    left: 13%;
+    width: 350px;
+    height: 390px;
     font-size: 15px;
     text-align: center;
+    background-color: #fdfbff;
   }
   #c2 .card
   {
     color: #5f2c7e;
     position: absolute;
     top: 22%;
-    left: 26%;
-    width: 270px;
-    height: 250px;
+    left: 55%;
+    width: 350px;
+    height: 390px;
     font-size: 15px;
     text-align: center;
-  }
-  #c3 .card
-  {
-    color: #5f2c7e;
-    position: absolute;
-    top: 22%;
-    left: 51%;
-    width: 270px;
-    height: 250px;
-    font-size: 15px;
-    text-align: center;
-  }
-  #c4 .card
-  {
-    color: #5f2c7e;
-    position: absolute;
-    top: 22%;
-    left: 76%;
-    width: 270px;
-    height: 250px;
-    font-size: 15px;
-    text-align: center;
+    background-color: #fdfbff;
   }
    .card .card-body a
   {
@@ -144,7 +122,7 @@
     {
        background-color: #5f2c7e;
        color: white; 
-       width: 160px;
+       width: 140px;
        height: 65px;
        position: absolute;
        left: 87%;
@@ -184,46 +162,40 @@
       border: 1px solid white; 
       background-color: #FBF8FE;
     }
+    #c1 .card .card-body .fas
+    {
+      width: 100px;
+      height: 100px;
+    }
     #c1 .card:hover
     {
-      width: 272px;
-      height: 252px;
+      background-color: #ddc7f4;
+      width: 351px;
+      height: 391px;
     }
     #c2 .card:hover
     {
-      width: 272px;
-      height: 252px;
+      background-color: #ddc7f4;
+      width: 351px;
+      height: 391px;
     }
-    #c3 .card:hover
+     #content #top .tt
     {
-      width: 272px;
-      height: 252px;
+      font-family: 'Titillium Web', sans-serif;
+      padding-top: 5px;
+      font-size: 50px;
     }
-    #c4 .card:hover
-    {
-      width: 272px;
-      height: 252px;
-    }
-    </style>
+  </style>
 </head>
 <body>
-  <a href="Create.html"><button type="submit" class="btn" value="submit"><i class="fas fa-plus-circle"></i> Create Ads
-  </button></a>
   <div id="content">
     <div id="top">
+      <p class="tt">Superuser</p>
        <span class="slide">
       <a href="#" onclick="openSlideMenu()">
         <i class="fas fa-bars"></i>
       </a>
     </span>
-  <div class="wrap"> 
-   <div id="searching">
-      <input type="text" class="searchhere" placeholder="Search Location For Room">
-      <a href="search.html">
-        <button type="submit" class="searchbtn"><i class="fas fa-search"></i></button>
-      </a>   
-   </div>
-  </div>
      </div>
     <div id="menu" class="sidebar">
       <div id="k3">
@@ -234,15 +206,8 @@
       </div>
       <br>
       <ul>
-      <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
-        <li><a href="YourAds.html"><i class="fas fa-user-plus"></i> Your Ads</a></li>
-        <li><a href="#"><i class="fas fa-cogs"></i> Settings</a>
-                <ul>
-                  <li>
-                    <a href="cpassword.html"><i class="fas fa-key"></i>Change Password</a>
-                  </li>
-                </ul>
-        </li>
+      <li><a href="user.html"><i class="fas fa-home"></i> Dashboard</a></li>
+  
         <li id="lg"><a href="frontpage.html"><i class="fas fa-sign-out-alt"></i>Log Out</a></li>    
     </ul>
     </div>
@@ -250,10 +215,10 @@
     <a href="#">
     <div id="c1">
       <div class="card ">       
-       <div class="card-body" style="background-color: #ffffff">            
-         <img src="img/ktm1.jpg" width="230" height="150">
-         <hr>
-          <h6>Kathmandu</h6>  
+       <div class="card-body">   
+          <img src="img/pie.png" width="310" height="300">        
+          <h3>Pie Chart</h3> 
+          <h6> for total number of registered user </h6> 
       </div>
      </div> 
     </div>
@@ -261,15 +226,15 @@
   <a href="#">
     <div id="c2">
       <div class="card ">       
-       <div class="card-body" style="background-color: #ffffff">            
-         <img src="img/Dharan.jpg" width="227" height="150">
-        <hr>
-        <h6>Dharan</h6>  
+       <div class="card-body">
+       <img src="img/bar.png" width="310" height="300">                
+        <h3>Bar Chart</h3> 
+        <h6> For room rented / transaction</h6> 
       </div>
      </div> 
     </div>
   </a>
-    </div>
+  </div>
 
 
 <!---Script src--->
